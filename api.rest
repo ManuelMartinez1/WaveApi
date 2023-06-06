@@ -1,0 +1,90 @@
+
+### 
+GET http://localhost:3000/api/usuarios/
+
+###
+GET http://localhost:3000/api/usuarios/instrumento/647e174ed9d8d1f8cbf6a66c
+
+### 
+POST http://localhost:3000/api/crear/ 
+Content-Type: application/json
+
+{
+    "nombre": "Daniel",
+    "apellido": "Zamora",
+    "correo": "danielzamoroa@hotmail.com",
+    "contrasena": "zrvs5sdh12",
+    "descripcion": "Joven de 18 años apasionado por la musica, bajista en Emma avenue y TheUpside y requintista en rondalla de cetys y villafontana",
+    "generos": [
+      "645fdcc629259a92bd21224d",
+      "645fdcc629259a92bd21224e",
+      "645fdcc629259a92bd212251",
+      "645fdcc629259a92bd212258"
+    ],
+    "instrumentos": [
+      "64628942e8b78da2ada81bbf",
+      "64628942e8b78da2ada81bb9",
+      "64628942e8b78da2ada81bbd"
+    ],
+    "fecha": "5/Marzo/2004",
+    "precio": "30$",
+    "calificacion": "5",
+    "collab": "si",
+    "localizacion": "Mexicali, Baja California",
+    "imagePath": "/assets/resources/danielprofile.png"
+}
+###
+DELETE http://localhost:3000/api/usuarios/borrar/647e242c0afe42f511b07cfd
+### 
+GET http://localhost:3000/api/usuarios/647a6159f03f5cea9e58f44f
+
+### 
+DELETE http://localhost:3000/api/usuarios/borrar
+
+### 
+PUT http://localhost:3000/api/update/usuario/647e242c0afe42f511b07cfd
+Content-Type: application/json
+
+{  "nombre": "Alejandro",
+    "apellido": "Ramirez",
+    "correo": "alejandroramirez@hotmail.com",
+    "contrasena": "zrvs5sdh123",
+    "descripcion": "Joven de 20 años apasionado por la musica y la ingenieria industrial con 5 años de experiencia tocando, baterista en Emma avenue",
+    "generos": [
+      "645fdcc629259a92bd21224e",
+      "645fdcc629259a92bd212254",
+      "645fdcc629259a92bd21224d"
+    ],
+    "instrumentos": [
+      "64628942e8b78da2ada81bb8"
+    ],
+    "fecha": "19/Marzo/2002",
+    "precio": "20$",
+    "calificacion": "5",
+    "collab": "si",
+    "localizacion": "Mexicali, Baja California",
+    "imagePath": "/assets/resources/iceprofile.png",
+     "short": "Joven de 20 años apasionado por la musica y la ingenieria industrial con 5 años de experiencia tocando, baterista en Emma avenue"
+}
+
+//llamadas instrumento
+
+###
+GET http://localhost:3000/api/instrumentos/
+
+###
+
+GET http://localhost:3000/api/instrumentos/alias/
+
+###
+DELETE http://localhost:3000/api/instrumentos/borrar/
+//llamadas genero
+
+###
+
+GET http://localhost:3000/api/generos/
+
+//llamadas banda 
+
+###
+GET http://localhost:3000/api/banda/6462a735dc4a313c579502eb/
